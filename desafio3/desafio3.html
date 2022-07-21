@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10em auto;
+        }
+        main > *{
+            margin-top: 1em;
+        }
+        button{
+            border-radius: 20px;
+        }
+        button#atualizar-saldo{ background-color: aqua; }
+        button#limpar-saldo{ background-color: red; }
+        button:hover{ cursor: pointer; }
+    </style>
+</head>
+<body>
+    <main>
+        <h4>Valor a ser adicionado: <input id="soma" type="number"> </h4>
+        <button id="atualizar-saldo">Atualizar saldo</button>
+        <button id="limpar-saldo">Limpar seu saldo</button>
+        
+        <h1>"Seu saldo é: " <span id="campo-saldo"></span></h1>
+        
+    </main>
+    <script src="./desafio3.js"></script>
+</body>
+</html>
